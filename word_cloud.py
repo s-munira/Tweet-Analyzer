@@ -14,7 +14,7 @@ wc = WordCloud()
 counts_all = Counter()
 
 with open('filtered_tweets.txt', 'r') as f:
-    for line in f:  # Here you can also use the Cursor
+    for line in f:  
         counts_line = wc.process_text(line)
         counts_all.update(counts_line)
 
